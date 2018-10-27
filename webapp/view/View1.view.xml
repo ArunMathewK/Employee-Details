@@ -1,0 +1,79 @@
+ <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="emp.Employeedetails.controller.View1"
+	displayBlock="true">
+	<App >
+		<pages>
+			<SplitContainer>
+				<masterPages>
+					<Page title="Master">
+						<SearchField liveChange="onSearch"></SearchField>
+						<List id="list1" items="{path:'myData>/details',sorter:{path : 'title'}}" itemPress="item" updateFinished="Updated"
+							includeItemInSelection="true" mode="SingleSelectMaster">
+							<items>
+								<ObjectListItem title="{myData>title}" number="{myData>salary}" type="Active"
+									numberState="{= ${myData>salary} > 30000 ? 'Success' : 'Error' }" numberUnit="{myData>currency}" selected="true">
+									<attributes>
+										<ObjectAttribute text="{myData>number}" />
+									</attributes>
+								</ObjectListItem>
+							</items>
+						</List>
+						<footer>
+							<Bar>
+								<contentRight>
+									<Button xmlns="sap.m" text="Add Employee" id="addemp" icon="sap-icon://add" press="addEmployee" tooltip="Add Employee"/>
+								</contentRight>
+							</Bar>
+						</footer>
+					</Page>
+				</masterPages>
+				<detailPages>
+					<Page title="Detail">
+						<f:SimpleForm  editable="true" layout="ResponsiveGridLayout" title="{i18n>title}" adjustLabelSpan="false" singleContainerFullSize="false">
+							<f:content>
+								<Label text="Name "/>
+								<Input xmlns="sap.m" placeholder="Enter Your Name" editable="{jmodel>/editable}" value="{myData>/Panel/title}" width="80%" id="i1"/>
+								<Label text="Employee Id "/>
+								<Input xmlns="sap.m" placeholder="Employee Id" editable="{jmodel>/editable}" value="{myData>/Panel/number}" width="80%" id="i2"/>
+								<Label text="E-Mail "/>
+								<Input xmlns="sap.m" placeholder="Enter your E-Mail" editable="{jmodel>/editable}" value="{myData>/Panel/mail}" width="80%" id="i3"/>
+								<Label text="Mobile "/>
+								<Input xmlns="sap.m" placeholder="Enter Your Mob" editable="{jmodel>/editable}" value="{myData>/Panel/mob}" width="80%" id="i4"/>
+								<Label text="Salary "/>
+								<Input xmlns="sap.m" placeholder="Enter your Salary" editable="{jmodel>/editable}" value="{myData>/Panel/salary}" width="80%" id="t1"/>
+							</f:content>
+						</f:SimpleForm>
+						<!--<f:SimpleForm  editable="true" layout="ResponsiveGridLayout" title="{i18n>title}" adjustLabelSpan="false" singleContainerFullSize="false">-->
+						<!--	<f:content>-->
+						<!--		<Label text="Name "/>-->
+						<!--		<Text text="{myData>/Panel/title}" width="80%" id="t2"/>-->
+						<!--		<Label text="Employee Id "/>-->
+						<!--		<Text text="{myData>/Panel/number}" width="80%" id="t3"/>-->
+						<!--		<Label text="E-Mail "/>-->
+						<!--		<Text text="{myData>/Panel/mail}" width="80%" id="t4"/>-->
+						<!--		<Label text="Mobile "/>-->
+						<!--		<Text text="{myData>/Panel/mob}" width="80%" id="t5"/>-->
+						<!--		<Label text="Salary "/>-->
+						<!--		<Text text="{myData>/Panel/salary}" width="80%" id="t6"/>-->
+						<!--	</f:content>-->
+						<!--</f:SimpleForm>-->
+							<Bar>
+								<contentLeft>
+										<Button xmlns="sap.m" text="Edit" id="editBtn" icon="sap-icon://action" press="Edit" tooltip="edit"/>
+									    <Button xmlns="sap.m" text="Save" id="savebtn" visible="false" tooltip="Save" press="Save" icon="sap-icon://save" class="sapUiSmallMarginEnd"/>
+								     	<Button xmlns="sap.m" text="Cancel" id="cancelbtn" visible="false" icon="sap-icon://cancel" press="Cancel" tooltip="Add"/>
+								</contentLeft>
+							</Bar>
+							<footer>
+							<Bar>
+								<contentRight>
+									<Button xmlns="sap.m" type="Reject" text="Logout" id="logout"  press="logOut" tooltip="Add Employee"/>
+								</contentRight>
+							</Bar>
+						</footer>
+					</Page>
+				</detailPages>
+			</SplitContainer>
+		</pages>
+	</App>
+</mvc:View>

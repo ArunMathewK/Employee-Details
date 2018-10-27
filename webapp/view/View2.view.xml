@@ -1,0 +1,40 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:form="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" controllerName="emp.Employeedetails.controller.View2"
+	displayBlock="true">
+		<App id="add">
+		<pages>
+			<Page title="Add Employee">
+				
+				<f:SimpleForm  editable="true" layout="ResponsiveGridLayout" title="Enter the Employee Details" adjustLabelSpan="false"
+							singleContainerFullSize="false" id="frm">
+							<f:content>
+								<Label text="Name" design="Bold" required = "true" />
+								<Input liveChange="validate"  xmlns="sap.m" placeholder="Enter Employee Name"   width="80%" id="i1" valueLiveUpdate="true"  /> 
+								<Label text="Employee Id" design="Bold" required = "true"/>
+								<Input liveChange="validate" type="Number" xmlns="sap.m" placeholder="Employee Id"  width="80%" id="i2" valueLiveUpdate="true" />
+								<Label text="E-Mail" design="Bold" required = "true" />
+								<Input liveChange="validate" change="validate" type="Email" xmlns="sap.m" placeholder="Enter Employee E-Mail"  width="80%" id="i3" valueLiveUpdate="true" />
+								<Label text="Mobile" design="Bold" required = "true" />
+								<Input liveChange="validate" type="Number" xmlns="sap.m" placeholder="Enter Employee Mob"  width="80%" id="i4" valueLiveUpdate="true"/>
+								<Label text="Salary" design="Bold" required = "true"/>
+								<Input liveChange="validate" type="Number" xmlns="sap.m" placeholder="Enter Employee Salary"  width="80%" id="i5" valueLiveUpdate="true"/>
+								<Label text="Currency" design="Bold" required = "true"/>
+								<Input liveChange="validate" xmlns="sap.m" placeholder="Enter the Currency type" width="80%" id="i6" valueLiveUpdate="true"/>
+								<!--<Toolbar>-->
+									<!--<Button xmlns="sap.m" text="Edit" id="editBtn" icon="sap-icon://action" press="Edit" tooltip="edit"/>-->
+									<!--<Button text="Back" press = "back" />-->
+									<!--<Button xmlns="sap.m" text="Cancel" id="cancelbtn" visible="false" icon="sap-icon://cancel" press="Cancel" tooltip="Add"/>-->
+							<!--	</Toolbar>-->
+							</f:content>
+						</f:SimpleForm>
+				<Bar>
+				<contentLeft>
+					<Button text="Cancel" press = "cancel" icon="sap-icon://cancel" />
+					<Button text="Save"  press = "add" icon="sap-icon://save" />
+				</contentLeft>
+				</Bar>
+				
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

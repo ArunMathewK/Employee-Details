@@ -1,0 +1,58 @@
+	{
+				"details": [{
+					"title": "Rahul",
+					"number": "001",
+					"mail":"rahul@gmail.com",
+					"mob":"8578919986",
+					"salary":"30000",
+					"currency":"EUR"
+				}, {
+					"title": "Abi",
+					"number": "002",
+					"mail":"abi@gmail.com",
+					"mob":"8745629892",
+					"salary":"50000",
+					"currency":"POUND"
+				}, {
+					"title": "Snehesh",
+					"number": "003",
+					"mail":"snehesh@gmail.com",
+					"mob":"9784478366",
+					"salary":"45000",
+					"currency":"INR"
+				}, {
+					"title": "Jemsheed",
+					"number": "004",
+					"mail":"jemsheed@gmail.com",
+					"mob":"8127646213",
+					"salary":"40000",
+					"currency":"EUR"
+				}, {
+					"title": "Jobin",
+					"number": "005",
+					"mail":"jobin@gmail.com",
+					"mob":"9722646213",
+					"salary":"47000",
+					"currency":"YEN"
+				}, {
+					"title": "Muhallid",
+					"number": "006",
+					"mail":"muhallid@gmail.com",
+					"mob":"9722646538",
+					"salary":"30000",
+					"currency":"DOLLER"
+				}, {
+					"title": "Sanju",
+					"number": "007",
+					"mail":"sanju@gmail.com",
+					"mob":"9787543876",
+					"salary":"25000",
+					"currency":"EUR"
+				}, {
+					"title": "Pravith",
+					"number": "008",
+					"mail":"pravith@gmail.com",
+					"mob":"9774563887",
+					"salary":"27000",
+					"currency":"INR"				}]
+	}	

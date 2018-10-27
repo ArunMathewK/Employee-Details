@@ -1,0 +1,31 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:l="sap.ui.layout"
+   xmlns:f="sap.ui.layout.form"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="helloDialog"
+      title="{i18n>dialogbox}">
+<f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			singleContainerFullSize="true" >
+			<f:content>
+				<Label text="Name" />
+				<Text  text="{myData>/Panel/title}" />
+				<Label text="Employee Id" />
+				<Text text="{myData>/Panel/number}" />
+				<Label text="Email" />
+				<Text text="{myData>/Panel/mail}" />
+				<Label text="MOb" />
+				<Text  text="{myData>/Panel/mob}" />
+				<Label text="Salary" />
+				<Text  text="{myData>/Panel/salary}" />
+			</f:content>
+		</f:SimpleForm>
+   	    <beginButton>
+          <Button
+            text="OK"
+            press="onCloseDialog"/>
+        </beginButton>
+   </Dialog>
+</core:FragmentDefinition>

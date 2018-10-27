@@ -1,0 +1,34 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="emp.Employeedetails.controller.Login"
+	xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="LOGIN HERE TO VIEW THE EMPLOYEE DETAILS" class="page">
+				<content>
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center" >
+						<f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="LOGIN HERE!.." adjustLabelSpan="false" singleContainerFullSize="false" class="border">
+							<f:content>
+								<!--<Text text="LOGIN" class="h1"/>-->
+								<!--<Label text="User Name"/>-->
+								<Input id="uid" placeholder="Enter the User Name"/>
+								<!--<Label text="Password"/>-->
+								<Input id="psw" placeholder="Enter the Password" type="Password"/>
+								<Button type="Accept" press="logIn" text="LOGIN"/>
+							</f:content>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+				<footer >
+					<Bar >
+						<contentRight>
+							<Text text="If You are a New User. Please SignUp Here!.." />
+						</contentRight>
+						<contentLeft>
+							<Text text="FOOTER" />
+							<!--<Button width="12rem" text="Signup Here" type="Emphasized" press="onLoginTap"/>-->
+						</contentLeft>
+					</Bar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

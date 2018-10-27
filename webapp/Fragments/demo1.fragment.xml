@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="helloDialoga"
+      title="Canceled">
+   	    <beginButton>
+          <Button
+            text="OK"
+            press="cancelbtn"/>
+        </beginButton>
+   </Dialog>
+</core:FragmentDefinition>
