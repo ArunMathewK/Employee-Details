@@ -67,7 +67,7 @@
 							<footer>
 							<Bar>
 								<contentRight>
-									<Button xmlns="sap.m" type="Reject" text="Logout" id="logout"  press="logOut" tooltip="Add Employee"/>
+									<Button xmlns="sap.m" type="Reject" text="LogOut" icon="sap-icon://log" id="logout"  press="logOut" tooltip="Add Employee"/>
 								</contentRight>
 							</Bar>
 						</footer>
